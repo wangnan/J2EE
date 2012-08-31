@@ -9,7 +9,7 @@
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.6</java-version>
-		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
+		<org.springframework-version>3.1.2.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.9</org.aspectj-version>
 		<org.slf4j-version>1.5.10</org.slf4j-version>
 		<cxf.version>2.2.3</cxf.version>
@@ -173,15 +173,20 @@
 			<version>4.1.6.Final</version>
 		</dependency>
 
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-hibernate3</artifactId>
 			<version>2.0.8</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.transaction</groupId>

@@ -24,7 +24,7 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/dbname?useUnicode=true&amp;characterEncoding=utf8；" />
+			value="jdbc:mysql://localhost:3306/j2ee?useUnicode=true&amp;characterEncoding=utf8；" />
 		<property name="username" value="root" />
 		<property name="password" value="" />
 	</bean>
@@ -39,13 +39,7 @@
 				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
-
-		<!-- 以下列表写入实体类 -->
-		<property name="annotatedClasses">
-			<list>
-				<!-- 中间写入hibernate注解的实体 -->
-			</list>
-		</property>
+		<property name="packagesToScan" value="com.wangnan.backend.model."></property>
 	</bean>
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
