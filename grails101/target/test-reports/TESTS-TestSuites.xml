@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="0" name="AttachmentServiceTests" package="grails101" tests="1" time="0.33" timestamp="2012-09-18T02:41:40">
+      <properties />
+
+      <testcase classname="grails101.AttachmentServiceTests" name="testSomething" time="0.121">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.AttachmentServiceTests.testSomething(AttachmentServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="1" name="AttachmentTests" package="grails101" tests="1" time="0.466" timestamp="2012-09-18T02:41:40">
+      <properties />
+
+      <testcase classname="grails101.AttachmentTests" name="testSomething" time="0.385">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.AttachmentTests.testSomething(AttachmentTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="2" name="MeetingServiceTests" package="grails101" tests="1" time="0.142" timestamp="2012-09-18T02:41:41">
+      <properties />
+
+      <testcase classname="grails101.MeetingServiceTests" name="testSomething" time="0.023">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.MeetingServiceTests.testSomething(MeetingServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="3" name="MeetingTests" package="grails101" tests="1" time="0.443" timestamp="2012-09-18T02:41:41">
+      <properties />
+
+      <testcase classname="grails101.MeetingTests" name="testSomething" time="0.141">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.MeetingTests.testSomething(MeetingTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="4" name="UserControllerTests" package="grails101" tests="1" time="0.991" timestamp="2012-09-18T02:41:41">
+      <properties />
+
+      <testcase classname="grails101.UserControllerTests" name="testSomething" time="0.908">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.UserControllerTests.testSomething(UserControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="ous-MacBook-Pro.local" id="5" name="UserServiceTests" package="grails101" tests="1" time="0.085" timestamp="2012-09-18T02:41:42">
+      <properties />
+
+      <testcase classname="grails101.UserServiceTests" name="testSomething" time="0.016">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at grails101.UserServiceTests.testSomething(UserServiceTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="1" failures="0" hostname="ous-MacBook-Pro.local" id="6" name="UserTests" package="grails101" tests="1" time="0.639" timestamp="2012-09-18T02:41:42">
+      <properties />
+
+      <testcase classname="grails101.UserTests" name="testSomething" time="0.637">
+          <error message="Method remove(Object o) is not supported by this implementation" type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException: Method remove(Object o) is not supported by this implementation
+	at grails101.UserTests.testSomething(UserTests.groovy:31)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+1
+2
+3
+4
+5
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
