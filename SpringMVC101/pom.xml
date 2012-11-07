@@ -166,6 +166,12 @@
 			<version>3.3.0.ga</version>
 		</dependency>
  -->
+ 		<!--  JSON Support -->
+ 		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-jaxrs</artifactId>
+			<version>1.9.9</version>
+		</dependency>
 		<!-- Hibernate framework -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
