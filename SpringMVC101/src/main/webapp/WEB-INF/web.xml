@@ -10,6 +10,7 @@
 		<param-value>
 		/WEB-INF/spring/root-context.xml
 		/WEB-INF/spring/appServlet/spring-security.xml
+		classpath:com/wangnan/backend/scheduler/scheduler.xml
 		</param-value>
 	</context-param>
 
