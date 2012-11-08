@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
 		<config>src/main/java/com/wangnan/backend/scheduler/scheduler.xml</config>
+		<config>src/main/java/com/wangnan/backend/dcn/dcn.xml</config>
 	</configs>
 	<configSets>
 	</configSets>

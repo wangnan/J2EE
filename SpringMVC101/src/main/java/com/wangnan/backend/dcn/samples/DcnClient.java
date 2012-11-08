@@ -2,7 +2,6 @@ package com.wangnan.backend.dcn.samples;
 
 import java.util.ArrayList;
 
-import com.wangnan.backend.dcn.POJO.CustomerBO;
 import com.wangnan.backend.dcn.request.DCNGenerator;
 
 public class DcnClient {

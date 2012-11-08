@@ -1,4 +1,4 @@
-package com.wangnan.backend.dcn.POJO;
+package com.wangnan.backend.dcn.samples;
 
 public class CustomerBO {
 

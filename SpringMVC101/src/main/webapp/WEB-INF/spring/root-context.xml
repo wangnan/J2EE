@@ -7,7 +7,9 @@
                            http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- Root Context: defines shared resources visible to all other web components -->
-
+	<!-- use to get the app context -->
+	<bean id="applicationContextProvider" class="com.wangnan.backend.util.ApplicationContextProvider"></bean>
+	
 	<!-- setting for cxf -->
 	<import resource="classpath:META-INF/cxf/cxf.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
@@ -19,7 +21,8 @@
 		address="/HelloWorld" />
 
 	<!-- Hibernate Settings -->
-	<!-- 配置数据库连接 -->
+	<!-- 配置数据库连接  mysql-->
+	<!-- 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -28,7 +31,6 @@
 		<property name="username" value="root" />
 		<property name="password" value="" />
 	</bean>
-	<!-- 配置hibernate相关信息 -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -41,10 +43,41 @@
 		</property>
 		<property name="packagesToScan" value="com.wangnan.backend.model."></property>
 	</bean>
+	
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
-	<!-- 使用annotation定义事务 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
+	-->
+	
+	
+	<!-- 配置数据库连接  SQL Anywhere-->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.sybase.jdbc3.jdbc.SybDriver" />
+		<property name="url"
+			value="jdbc:sybase:Tds:10.80.1.18:2638?ServiceName=&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+		<property name="username" value="dba" />
+		<property name="password" value="sql" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.SybaseAnywhereDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+		<property name="packagesToScan" value="com.wangnan.backend.model."></property>
+	</bean>
+	
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
 </beans>
